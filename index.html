@@ -9,26 +9,20 @@
   <script src="src/Components/DynamicTitle.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div class="card_left">
-        <span>Sergio Costa</span>
-        <a href="#">Darth Vader Contrata Devs</a>
-        <p>Darth Vader procura desenvolvedores que sabem trabalhar com componentes</p>
-      </div>
-      <div class="card_right">
-        <img src="assets/lado-negro-da-forca.jpg" alt="">
-      </div>
-    </div>
-  </div>
+  <div class="app-root">
+    <card-news 
+      author="Sergio"
+      title="Darth Vader Contrata Devs"
+      href="https://www.google.com"
+      photo="assets/lado-negro-da-forca.jpg"
+      content="Darth Vader procura desenvolvedores que sabem trabalhar com componentes"
+    ></card-news>
 
-  <card-news 
-    author="Sergio"
-    title="Darth Vader Contrata Devs"
-    href="www.google.com"
-    photo="assets/lado-negro-da-forca.jpg"
-    content="Darth Vader procura desenvolvedores que sabem trabalhar com componentes"
-  ></card-news>
-  <titulo-dinamico titulo="Noticia Urgente"></titulo-dinamico>
+    <card-news
+      title="Yoda Convence republica a utilizar Components"
+      href="www.google.com/yoda"
+      content="Darth Vader procura desenvolvedores que sabem trabalhar com componentes"
+    ></card-news>
+  </div>
 </body>
 </html> 
